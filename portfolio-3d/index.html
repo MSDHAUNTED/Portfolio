@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaurav Sonigra - 3D Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-word">Gaurav</span>
+                    <span class="title-word">Sonigra</span>
+                </h1>
+                <p class="hero-subtitle">Creative Developer & Data Innovator</p>
+                <p class="hero-description">Building stunning 3D experiences, analyzing data at scale, and creating intelligent solutions that push the boundaries of what's possible on the web.</p>
+                <div class="hero-actions">
+                    <a href="#" class="btn btn-primary" download>📄 Download Resume</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="glow-orb"></div>
+            </div>
+        </div>
+        <div class="hero-social">
+            <a href="https://github.com/MSDHAUNTED" target="_blank" class="social-icon github-icon" title="GitHub">📱</a>
+            <a href="https://www.linkedin.com/in/gaurav-sonigra-088b8324b/" target="_blank" class="social-icon linkedin-icon" title="LinkedIn">💼</a>
+        </div>
+        <div class="hero-visual">
+            <div class="glow-orb"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            
+            <div class="about-grid">
+                <!-- Education -->
+                <div class="about-card">
+                    <h3 class="card-title">📚 Education</h3>
+                    <div class="education-list">
+                        <div class="edu-item">
+                            <div class="edu-header">
+                                <h4>B. Tech in Information Technology</h4>
+                                <span class="edu-date">2022 - 2026</span>
+                            </div>
+                            <p>MPSTME, NMIMS University</p>
+                            <p class="edu-highlight">CGPA: 3.23/4</p>
+                        </div>
+                        <div class="edu-item">
+                            <div class="edu-header">
+                                <h4>HSC</h4>
+                                <span class="edu-date">2021 - 2022</span>
+                            </div>
+                            <p>Thakur College of Science and Commerce</p>
+                            <p class="edu-highlight">69%</p>
+                        </div>
+                        <div class="edu-item">
+                            <div class="edu-header">
+                                <h4>CBSE</h4>
+                                <span class="edu-date">2019 - 2020</span>
+                            </div>
+                            <p>Tapovan SanskarDham Vidyalaya</p>
+                            <p class="edu-highlight">83.3%</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certifications -->
+                <div class="about-card">
+                    <h3 class="card-title">🏆 Certifications & Achievements</h3>
+                    <div class="cert-list">
+                        <div class="cert-item">
+                            <span class="cert-badge">Virtual Internship</span>
+                            <p><strong>Accenture North America</strong> - Data Analyst Job Simulation (Jun–Jul 2025)</p>
+                        </div>
+                        <div class="cert-item">
+                            <span class="cert-badge">Virtual Internship</span>
+                            <p><strong>Deloitte</strong> - Data Analyst Job Simulation (Jun–Jul 2025)</p>
+                        </div>
+                        <div class="cert-item">
+                            <span class="cert-badge">Award Winner</span>
+                            <p><strong>Ideathon Challenge Winner</strong> - Sobus Innovent (2022) - Pitched before real investors</p>
+                        </div>
+                        <div class="cert-item">
+                            <span class="cert-badge">Publication</span>
+                            <p><strong>Review Paper Accepted</strong> - "ML Technique for Hairstyle Prediction" at ICT Conference 2025, Goa</p>
+                        </div>
+                        <div class="cert-item">
+                            <span class="cert-badge">Volunteer</span>
+                            <p><strong>Community Service Volunteer</strong> - Lions Club (2023)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Leadership Roles -->
+                <div class="about-card">
+                    <h3 class="card-title">🎯 Positions of Responsibility</h3>
+                    <div class="roles-list">
+                        <div class="role-item">
+                            <div class="role-header">
+                                <h4>App Development Club</h4>
+                                <span class="role-date">Aug 2023 – Apr 2024</span>
+                            </div>
+                            <p>Editing Team Member</p>
+                        </div>
+                        <div class="role-item">
+                            <div class="role-header">
+                                <h4>NMMUN</h4>
+                                <span class="role-date">Aug 2023 – Jan 2024</span>
+                            </div>
+                            <p>Logistics and Support Teams</p>
+                        </div>
+                        <div class="role-item">
+                            <div class="role-header">
+                                <h4>Sobus Club</h4>
+                                <span class="role-date">Aug 2022 – Jul 2023</span>
+                            </div>
+                            <p>R&D Team Member</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            
+            <!-- Project Filter Buttons -->
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="data-analysis">📊 Data Analysis</button>
+                <button class="filter-btn" data-filter="app-development">🗺️ App Development</button>
+                <button class="filter-btn" data-filter="ai-ml">🤖 AI/ML</button>
+            </div>
+
+            <div class="projects-grid" id="projectsGrid">
+                <!-- Data Analysis Projects -->
+                <div class="project-card" data-category="data-analysis">
+                    <div class="project-header">
+                        <div class="project-icon">📊</div>
+                        <h3>Paris Olympics 2024</h3>
+                    </div>
+                    <p class="project-description">Comprehensive data analysis covering athletes, medals, gender distribution & top performers</p>
+                    <div class="project-tags">
+                        <span class="tag">Data Analysis</span>
+                        <span class="tag">Analytics</span>
+                    </div>
+                    <a href="https://github.com/MSDHAUNTED/PARIS-OLYMPICS-2024-ANALYSIS" target="_blank" class="project-link">View on GitHub →</a>
+                </div>
+
+                <div class="project-card" data-category="data-analysis">
+                    <div class="project-header">
+                        <div class="project-icon">🏏</div>
+                        <h3>IPL 2025 Dashboard</h3>
+                    </div>
+                    <p class="project-description">Power BI dashboard with dynamic filters highlighting team performance, runs & wickets</p>
+                    <div class="project-tags">
+                        <span class="tag">Power BI</span>
+                        <span class="tag">Dashboard</span>
+                    </div>
+                    <a href="https://github.com/MSDHAUNTED/IPL-2025-Analytics-Project-PowerBI-" target="_blank" class="project-link">View on GitHub →</a>
+                </div>
+
+                <div class="project-card" data-category="data-analysis">
+                    <div class="project-header">
+                        <div class="project-icon">📈</div>
+                        <h3>India Economy Analysis</h3>
+                    </div>
+                    <p class="project-description">Tableau project analyzing India's macroeconomic indicators over two decades</p>
+                    <div class="project-tags">
+                        <span class="tag">Tableau</span>
+                        <span class="tag">Economics</span>
+                    </div>
+                    <a href="https://github.com/MSDHAUNTED/INDIA-MACROECONOMIC-ANALYSIS" target="_blank" class="project-link">View on GitHub →</a>
+                </div>
+
+                <!-- App Development Projects -->
+                <div class="project-card" data-category="app-development">
+                    <div class="project-header">
+                        <div class="project-icon">🗺️</div>
+                        <h3>Campus Navigator App</h3>
+                    </div>
+                    <p class="project-description">Android app for campus navigation with OpenStreetMap & OpenRouteService API integration</p>
+                    <div class="project-tags">
+                        <span class="tag">Android</span>
+                        <span class="tag">Maps API</span>
+                    </div>
+                    <a href="https://github.com/MSDHAUNTED/NMIMSGO-Campus-Navigation-App-project" target="_blank" class="project-link">View on GitHub →</a>
+                </div>
+
+                <div class="project-card" data-category="app-development">
+                    <div class="project-header">
+                        <div class="project-icon">⚙️</div>
+                        <h3>CodTech Internship</h3>
+                    </div>
+                    <p class="project-description">C++ internship tasks including file handling, compression, snake game & compiler</p>
+                    <div class="project-tags">
+                        <span class="tag">C++</span>
+                        <span class="tag">Algorithms</span>
+                    </div>
+                    <a href="https://github.com/MSDHAUNTED/CodTech-Cpp-Internship" target="_blank" class="project-link">View on GitHub →</a>
+                </div>
+
+                <!-- AI/ML Projects -->
+                <div class="project-card" data-category="ai-ml">
+                    <div class="project-header">
+                        <div class="project-icon">🤖</div>
+                        <h3>YouTube Q&A Generator</h3>
+                    </div>
+                    <p class="project-description">AI-powered system to generate Q&A from YouTube video content using Python</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">AI/ML</span>
+                    </div>
+                    <a href="https://github.com/MSDHAUNTED/Q-A-with-youtube-videos" target="_blank" class="project-link">View on GitHub →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>💻 Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-badge">Python</div>
+                        <div class="skill-badge">C++</div>
+                        <div class="skill-badge">JavaScript</div>
+                        <div class="skill-badge">HTML/CSS</div>
+                        <div class="skill-badge">C++ Basics</div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>📊 Data & Analytics</h3>
+                    <div class="skill-items">
+                        <div class="skill-badge">Power BI</div>
+                        <div class="skill-badge">Tableau</div>
+                        <div class="skill-badge">SQL</div>
+                        <div class="skill-badge">Data Visualization</div>
+                        <div class="skill-badge">Pandas/NumPy</div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>🎨 3D & Web</h3>
+                    <div class="skill-items">
+                        <div class="skill-badge">Three.js</div>
+                        <div class="skill-badge">WebGL</div>
+                        <div class="skill-badge">React</div>
+                        <div class="skill-badge">Next.js</div>
+                        <div class="skill-badge">CSS Animation</div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>🤖 AI/ML & Mobile</h3>
+                    <div class="skill-items">
+                        <div class="skill-badge">Machine Learning</div>
+                        <div class="skill-badge">RAG Systems</div>
+                        <div class="skill-badge">Android Dev</div>
+                        <div class="skill-badge">Firebase</div>
+                        <div class="skill-badge">LLM Integration</div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>🛠️ Tools & Software</h3>
+                    <div class="skill-items">
+                        <div class="skill-badge">VS Code</div>
+                        <div class="skill-badge">Figma</div>
+                        <div class="skill-badge">Jupyter</div>
+                        <div class="skill-badge">Android Studio</div>
+                        <div class="skill-badge">Git</div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>🎯 Soft Skills</h3>
+                    <div class="skill-items">
+                        <div class="skill-badge">Leadership</div>
+                        <div class="skill-badge">Problem Solving</div>
+                        <div class="skill-badge">Communication</div>
+                        <div class="skill-badge">Teamwork</div>
+                        <div class="skill-badge">Time Management</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">📧</div>
+                            <div class="method-details">
+                                <h4>Email</h4>
+                                <a href="mailto:sonigragaurav@gmail.com" class="contact-link">sonigragaurav@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon">💼</div>
+                            <div class="method-details">
+                                <h4>LinkedIn</h4>
+                                <a href="https://www.linkedin.com/in/gaurav-sonigra-088b8324b/" target="_blank" class="contact-link">Connect on LinkedIn</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon">🐙</div>
+                            <div class="method-details">
+                                <h4>GitHub</h4>
+                                <a href="https://github.com/MSDHAUNTED" target="_blank" class="contact-link">View GitHub Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Gaurav Sonigra. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Animated Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
